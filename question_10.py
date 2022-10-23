@@ -3,11 +3,13 @@ Write a program that accepts a sequence of whitespace separated words as input a
 '''
 
 
-def unique_list(l):
-    lst = []
-    [lst.append(i) for i in l if i not in lst]
-    print(lst)
+sentence = set(input("what would you like to say: ").split())
+print(sentence)
+# lst = list(sentence.split())
+# x = []
+# for i in lst:
+#     if i not in x:
+#         x.append(i)
+# x = sorted(x)
 
-
-a = input("what sentence: ")
-a = ' '.join(unique_list(a.split()))
+# print(' '.join(x))
