@@ -3,13 +3,12 @@ Write a program that accepts a sequence of whitespace separated words as input a
 '''
 
 
-sentence = set(input("what would you like to say: ").split())
-print(sentence)
-# lst = list(sentence.split())
-# x = []
-# for i in lst:
-#     if i not in x:
-#         x.append(i)
-# x = sorted(x)
+sentence = input("what would you like to say: ")
+lst = list(sentence.split())
+x = []
+for i in lst:
+    if i not in x:
+        x.append(i)
+x = sorted(x)
 
-# print(' '.join(x))
+print(' '.join(x))
