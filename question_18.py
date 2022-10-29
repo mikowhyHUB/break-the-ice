@@ -21,3 +21,4 @@ for pasw in user_input:
     if pasw.islower():
         print(pasw)
 print(check_letters)
+print('\n')
