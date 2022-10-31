@@ -6,3 +6,13 @@ You are required to write a program to sort the (name, age, score) tuples by asc
 3: Then sort by score
 The priority is that name > age > score.
 '''
+lst = []
+while True:
+    user = input().split(',')
+    if not user[0]:
+        break
+    lst.append(tuple(user))
+
+lst.sort(key=lambda x: (x[0], int(x[1]), int(x[2])))
+
+print(lst)
